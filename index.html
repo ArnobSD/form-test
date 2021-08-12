@@ -10,33 +10,22 @@
 
 <body>
 
-<form action="contact.php" method="post">
-    <div class="elem-group">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="visitor_name" placeholder="Your Name*" >
+
+  <div class="fcol col-3 ftrTopEle">
+    <h4> Feedback </h4>
+    <div class="contactCol">
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeFhSPMT94WwTB9LyGben7DtbTqr8mBHIjiJ7glKBnadRNZaQ/viewform?usp=sf_link" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
+
+            <input type="text" name="entry.805276147" placeholder="Name" required>
+            <input type="email" name="emailAddress" placeholder="Email" required>
+            <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+            <button type="submit" class="heroBtn"> Submit <i class="fas fa-paper-plane"></i> </button>
+        </form>
+
+        <p id="subMsg"></p>
+        <p id="errMsg"></p>
     </div>
-    <div class="elem-group">
-      <label for="email">Your E-mail</label>
-      <input type="email" id="email" name="visitor_email" placeholder="your email*@email.com" >
-    </div>
-    <div class="elem-group">
-      <label for="department-selection">Choose Concerned Department</label>
-      <select id="department-selection" name="concerned_department" >
-          <option value="">Select a Department</option>
-          <option value="billing">Billing</option>
-          <option value="marketing">Marketing</option>
-          <option value="technical support">Technical Support</option>
-      </select>
-    </div>
-    <div class="elem-group">
-      <label for="title">Reason For Contacting Us</label>
-      <input type="text" id="title" name="email_title" >
-    </div>
-    <div class="elem-group">
-      <label for="message">Write your message</label>
-      <textarea id="message" name="visitor_message" placeholder="Say whatever you want." ></textarea>
-    </div>
-    <button type="submit">Send Message</button>
-  </form>
+</div>
 </body>
 </html>
